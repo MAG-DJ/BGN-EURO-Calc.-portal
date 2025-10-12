@@ -4,39 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Калкулатор ЛЕВА/ЕВРО - Портал</title>
-    <style>
-        body { 
-            font-family: Arial, sans-serif; 
-            max-width: 600px; 
-            margin: 0 auto; 
-            padding: 20px; 
-            background: #f0f0f0;
-        }
-        .device-option { 
-            background: white; 
-            padding: 15px; 
-            margin: 10px 0; 
-            border-radius: 8px; 
-            cursor: pointer;
-            border: 2px solid #28a745;
-        }
-        .device-option:hover { background: #e8f5e8; }
-    </style>
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-    <h1>🧮 Калкулатор ЛЕВА ⇄ ЕВРО</h1>
-    <p>Безплатен и безкористен калкулатор, създаден специално за възрастните хора!</p>
+    <div class="header">
+        <h1>🧮 Калкулатор ЛЕВА ⇄ ЕВРО</h1>
+    </div>
+
+    <!-- ПЪЛНО ОПИСАНИЕ -->
+    <div class="instruction">
+        <p><strong>Безкористен и безплатен калкулатор за изчисляване на Левове към Евро и обратно.</strong></p>
+        <p>Създаден, автоматизиран и съобразен с възможностите на някои по-възрастни хора, а и други, които биха имали затруднения при боравене със стандартен калкулатор а и всеки друг.</p>
+        
+        <p>🎯 <strong>Споделете го с хора, които биха имали нужда от такъв калкулатор!</strong></p>
+        
+        <p>✅ <strong>Предимства:</strong></p>
+        <ul>
+            <li>Може да се ползва <strong>без интернет</strong></li>
+            <li><strong>Без реклами</strong></li>
+            <li><strong>Не събира лични данни</strong></li>
+        </ul>
+    </div>
+
+    <!-- ИЗБОР НА УСТРОЙСТВО -->
+    <div class="instruction">
+        <h2>📱 Изберете устройство за ползване:</h2>
+    </div>
     
     <div class="device-option" onclick="location.href='android.html'">
-        <h3>📱 Android / Телефон / Таблет</h3>
+        <h3>• Android / Телефон / Таблет</h3>
     </div>
     
     <div class="device-option" onclick="location.href='iphone.html'">
-        <h3>📱 iPhone (Safari)</h3>
+        <h3>• iPhone (Safari)</h3>
     </div>
     
     <div class="device-option" onclick="location.href='windows.html'">
-        <h3>💻 Компютър - Windows</h3>
+        <h3>• Компютър – Windows</h3>
     </div>
 </body>
 </html>
