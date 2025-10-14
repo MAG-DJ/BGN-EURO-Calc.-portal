@@ -20,7 +20,7 @@ body {
 .subtitle {
     text-align: center;
     font-size: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 0;
     color: #000;
 }
 
@@ -28,7 +28,7 @@ body {
     text-align: left;
     font-weight: bold;
     font-size: 16px;
-    margin-top: 0;
+    margin-top: 20px;
     margin-bottom: 30px;
     color: #1e90ff;
     font-style: italic;
@@ -71,8 +71,8 @@ body {
 
 /* БУТОНИ - ОБЩИ */
 .button-download {
-    background: white;
-    color: #28a745;
+    background: #28a745;
+    color: white;
     padding: 18px;
     text-align: center;
     border-radius: 8px;
@@ -85,10 +85,11 @@ body {
     display: block;
     width: 100%;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 .button-download:hover {
-    background: #28a745;
+    background: #218838;
     color: white;
 }
 
