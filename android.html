@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Инструкции за Android - Калкулатор</title>
     <link rel="stylesheet" href="assets/style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
 </head>
 <body>
     <div class="instruction">
@@ -15,14 +16,14 @@
         <p><strong>След изтегляне на калкулатора направете следното:</strong></p>
         
         <p><strong>1)</strong> Намерете в началния екран папка <strong>"Моите файлове"</strong><br>
-        <em>"Files" или "My files"</em></p>
+        <strong>"Files" или "My files"</strong></p>
         
         <p><strong>2)</strong> Докоснете я за да се отвори</p>
         
         <p><strong>3)</strong> Изберете <strong>"Изтегляния" "Downloads"</strong></p>
         
-        <p><strong>4)</strong> <em>Ако не виждате "Изтегляния" или "Downloads":</em><br>
-        Натиснете папка <strong>Документи</strong> → <strong>"Изтегляния"</strong> или <strong>"Downloads"</strong> и продължете с точка 4</p>
+        <p><strong>4)</strong> <em>Ако не виждате <strong>"Изтегляния"</strong> или <strong>"Downloads"</strong>:</em><br>
+        Натиснете папка <strong>Документи</strong> → <strong>"Изтегляния"</strong> или <strong>"Downloads"</strong> и продължете с точка <strong>5</strong></p>
         
         <p><strong>5)</strong> Докоснете и задръжте върху файла <strong>BGN-EURO Calculator</strong><br>
         Файла ще се активира и ще се появи отметка пред него (✓).</p>
@@ -48,7 +49,9 @@
     <!-- БУТОНИ В КРАЯ -->
     <div style="margin-top: 40px;"></div>
 
-    <a href="https://mag-dj.github.io/BGN-EURO-Calculator/BGN-EURO%20Calculator.html" download class="button-download">
+    <a href="https://mag-dj.github.io/BGN-EURO-Calculator/BGN-EURO%20Calculator.html" download 
+       class="button-download" 
+       onclick="setTimeout(() => { window.location.href = 'index.html'; }, 1000)">
         ИЗТЕГЛИ КАЛКУЛАТОРА
     </a>
 
