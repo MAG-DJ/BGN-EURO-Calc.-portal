@@ -60,5 +60,25 @@
     </div>
 
     <div style="margin-bottom: 40px;"></div>
+
+<!-- 🔐 ЗАЩИТА ОТ КОПИРАНЕ -->
+<script>
+document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+    alert('MAG-DJ® - Забранено копиране!');
+    return false;
+});
+
+document.addEventListener('copy', function(e) {
+    e.clipboardData.setData('text/plain', 'Инструкции за Android - Калкулатор ЛЕВА/ЕВРО © MAG-DJ\nОригинален източник: https://mag-dj.github.io\n\n' + window.getSelection().toString());
+    e.preventDefault();
+    alert('MAG-DJ® - Забранено копиране!');
+});
+
+document.addEventListener('selectstart', function(e) {
+    e.preventDefault();
+    return false;
+});
+</script>
 </body>
 </html>
