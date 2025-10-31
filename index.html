@@ -65,5 +65,24 @@
         <h3>• Компютър – Windows</h3>
     </div>
 
+<!-- 🔐 ЗАЩИТА ОТ КОПИРАНЕ -->
+<script>
+document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+    alert('MAG-DJ® - Забранено копиране!');
+    return false;
+});
+
+document.addEventListener('copy', function(e) {
+    e.clipboardData.setData('text/plain', 'Портал за калкулатор ЛЕВА/ЕВРО © MAG-DJ\nОригинален източник: https://mag-dj.github.io\n\n' + window.getSelection().toString());
+    e.preventDefault();
+    alert('MAG-DJ® - Забранено копиране!');
+});
+
+document.addEventListener('selectstart', function(e) {
+    e.preventDefault();
+    return false;
+});
+</script>
 </body>
 </html>
